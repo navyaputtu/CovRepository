@@ -11,7 +11,7 @@ public class App_01 {
 	public static void main(String[] args) {
 		ApplicationContext ctxt=new ClassPathXmlApplicationContext("spring.xml");
 		EmployeeService employeeService=(EmployeeService)ctxt.getBean("employeeService");
-		Employee employee=new Employee(101,"navya teja",20);
+		Employee employee=new Employee(101," puttu navya teja",20);
 		employeeService.save(employee);
 
 	}
